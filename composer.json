@@ -12,8 +12,6 @@
         "ardenthq/nova-image-gallery-field": "^1.1",
         "ctessier/nova-advanced-image-field": "^2.0",
         "ebess/advanced-nova-media-library": "^4.1",
-        "fosetico/laravel-pagebuilder": "*",
-        "fosetico/phpagebuilder": "*",
         "guzzlehttp/guzzle": "^7.7",
         "hansschouten/laravel-pagebuilder": "^0.24.0",
         "laravel/framework": "^10.10",
