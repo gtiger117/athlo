@@ -6,5 +6,8 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Mypackage\\Athlo\\' => array($baseDir . '/src'),
+    'package\\PackageVoucher\\' => array($baseDir . '/custom-packages/package/PackageVoucher/src'),
+    'Database\\Seeders\\' => array($baseDir . '/database/seeders'),
+    'Database\\Factories\\' => array($baseDir . '/database/factories'),
+    'App\\' => array($baseDir . '/app'),
 );

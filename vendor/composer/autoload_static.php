@@ -6,17 +6,42 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit3c63b48408db7eea1039ea96a6040b80
 {
+    public static $files = array (
+        '5c50b6dc9d551c1628afa88b56dc1a53' => __DIR__ . '/../..' . '/app/Helpers/Helper.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
-        'M' => 
+        'p' => 
         array (
-            'Mypackage\\Athlo\\' => 16,
+            'package\\PackageVoucher\\' => 23,
+        ),
+        'D' => 
+        array (
+            'Database\\Seeders\\' => 17,
+            'Database\\Factories\\' => 19,
+        ),
+        'A' => 
+        array (
+            'App\\' => 4,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Mypackage\\Athlo\\' => 
+        'package\\PackageVoucher\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/src',
+            0 => __DIR__ . '/../..' . '/custom-packages/package/PackageVoucher/src',
+        ),
+        'Database\\Seeders\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/database/seeders',
+        ),
+        'Database\\Factories\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/database/factories',
+        ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app',
         ),
     );
 
