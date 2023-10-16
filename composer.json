@@ -1,0 +1,14 @@
+{
+    "name": "mypackage/athlo",
+    "autoload": {
+        "psr-4": {
+            "Mypackage\\Athlo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "athlo"
+        }
+    ],
+    "require": {}
+}
