@@ -1,6 +1,6 @@
 <?php
 
-namespace Yk\LaravelPackageExample\Classes;
+namespace gtiger117\athlo\Classes;
 
 class ClassExample {
 

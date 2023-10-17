@@ -17,19 +17,19 @@ And example of a Laravel package.
 Install wia composer:
 
 ```
-composer require yassine-khachlek/laravel-package-example
+composer require gtiger117/athlo
 ```
 
 And add the service provider in config/app.php:
 
 ```php
-Yk\LaravelPackageExample\LaravelPackageExampleProvider::class,
+gtiger117\athlo\athloProvider::class,
 ```
 
 Then register Facade class aliase:
 
 ```php
-'FacadeExample' => Yk\LaravelPackageExample\Facades\FacadeExample::class,
+'FacadeExample' => gtiger117\athlo\Facades\FacadeExample::class,
 ```
 
 Publish assets:

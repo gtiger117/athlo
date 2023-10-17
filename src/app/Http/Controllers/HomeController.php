@@ -1,6 +1,6 @@
 <?php
 
-namespace Yk\LaravelPackageExample\App\Http\Controllers;
+namespace gtiger117\athlo\App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 
@@ -33,9 +33,9 @@ class HomeController extends Controller
 
         $image = $manager->make(__DIR__.'/../../../storage/app/public/box-1730159_640.png')->resize(300, 200);
 
-        return view('Yk\LaravelPackageExample::home', [
-            'configuration' => \Config::get('packages.Yk.LaravelPackageExample'),
-            'configuration_published' => \Config::get('vendor.yk.laravel-package-example'),
+        return view('gtiger117\athlo::home', [
+            'configuration' => \Config::get('packages.gtiger117.athlo'),
+            'configuration_published' => \Config::get('vendor.gtiger117.athlo'),
             'image' => $image
         ]);
     }

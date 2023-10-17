@@ -1,6 +1,6 @@
 <?php
 
-namespace Yk\LaravelPackageExample\App\Console\Commands;
+namespace gtiger117\athlo\App\Console\Commands;
 
 use Illuminate\Console\Command;
 

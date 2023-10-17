@@ -1,7 +1,7 @@
 {
-    "name": "yassine-khachlek/laravel-package-example",
+    "name": "gtiger117/athlo",
     "description": "A Laravel package example.",
-    "homepage": "https://github.com/yassine-khachlek/laravel-package-example",
+    "homepage": "https://github.com/gtiger117/athlo",
     "license": "GPLv2",
     "keywords": [
         "laravel",
@@ -23,7 +23,7 @@
             "src/"
         ],
         "psr-4": {
-            "Yk\\LaravelPackageExample\\": "src/"
+            "gtiger117\\athlo\\": "src/"
         }
     }
 }

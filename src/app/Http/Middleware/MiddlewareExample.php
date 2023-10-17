@@ -1,6 +1,6 @@
 <?php
 
-namespace Yk\LaravelPackageExample\App\Http\Middleware;
+namespace gtiger117\athlo\App\Http\Middleware;
 
 use Closure;
 

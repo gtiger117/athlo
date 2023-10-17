@@ -1,6 +1,6 @@
 <?php
 
-namespace Yk\LaravelPackageExample\Facades;
+namespace gtiger117\athlo\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
