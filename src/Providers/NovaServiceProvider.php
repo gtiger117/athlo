@@ -68,62 +68,6 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
                 }
                 array_push($menus,$tempMenu);
             }
-            /*
-            if(count($result) == 0){
-                $menus = [
-                    MenuSection::dashboard(Main::class)->icon('chart-bar'),
-                    MenuSection::make('Product Catalogue', [
-                        MenuItem::resource(GiftVoucher::class),
-                        MenuGroup::make('Settings', [
-                            // MenuItem::resource(PaymentMethod::class),
-                            // MenuItem::resource(PaymentMethodType::class),
-                            // MenuItem::resource(PaymentGateway::class),
-                        ])->collapsable()->collapsedByDefault(),
-                    ])->icon('briefcase')->collapsable()->collapsedByDefault(),
-    
-                    MenuSection::make('Ordering', [
-                        MenuItem::resource(VoucherOrder::class),
-                        MenuGroup::make('Settings', [
-                            // MenuItem::resource(PaymentMethod::class),
-                            MenuItem::resource(PaymentMethodType::class),
-                            MenuItem::resource(PaymentGateway::class),
-                            MenuItem::resource(VoucherEmailTemplate::class),
-                        ])->collapsable()->collapsedByDefault(),
-                    ])->icon('briefcase')->collapsable()->collapsedByDefault(),
-    
-                    MenuSection::make('Marketing', [
-                        MenuItem::resource(PromotionalVoucher::class),
-                        // MenuItem::resource(ShippingMethodType::class),
-                        MenuGroup::make('Settings', [
-                            // MenuItem::resource(Pickup::class),
-                            // MenuItem::resource(PickupGroup::class),
-                            // MenuItem::resource(Region::class),
-                        ])->collapsable()->collapsedByDefault(),
-                    ])->icon('briefcase')->collapsable()->collapsedByDefault(),
-    
-                    MenuSection::make('Shipping', [
-                        MenuItem::resource(ShippingMethod::class),
-                        MenuItem::resource(ShippingMethodType::class),
-                        MenuGroup::make('Settings', [
-                            MenuItem::resource(Pickup::class),
-                            MenuItem::resource(PickupGroup::class),
-                            MenuItem::resource(Region::class),
-                        ])->collapsable()->collapsedByDefault(),
-                    ])->icon('briefcase')->collapsable()->collapsedByDefault(),
-    
-                    MenuSection::make('Website', [
-                        // MenuItem::resource(Page::class),
-                         MenuItem::link('Page', '/page'),  
-                         MenuItem::resource(Banner::class),                  
-                         MenuItem::resource(Blog::class),                  
-                     ])->icon('trash')->collapsable()->collapsedByDefault(),
-    
-                     MenuSection::make('Settings', [
-                        MenuItem::resource(Tax::class),
-                    ])->icon('cog')->collapsable()->collapsedByDefault(),
-                ];
-            }
-            */
             return $menus;
             
         });

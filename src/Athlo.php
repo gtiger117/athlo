@@ -21,29 +21,7 @@ class Athlo extends Tool
      *
      * @return void
      */
-    function get_menus($parent){
-        $submenu = DB::table('nova_menu_menu_items')
-                        // ->join('nova_menu_menus', 'nova_menu_menus.id', '=', 'nova_menu_menu_items.menu_id')
-                        // ->where('slug','nova_menu')
-                        ->where('parent_id',$parent)->orderBy('order', 'asc')->get();
-        $menus = [];
-        for($k=0;$k<count($submenu);$k++){
-            if(DB::table('nova_menu_menu_items')->where('parent_id',$submenu[$k]->id)->exists()){
-                $tempMenu =  MenuGroup::make($submenu[$k]->name, $this->get_menus($submenu[$k]->id))->collapsable()->collapsedByDefault();
-            }else if($submenu[$k]->value == null || $submenu[$k]->value == ""){
-                if(strpos($submenu[$k]->name,"\\")){
-                    $tempMenu =  MenuItem::resource($submenu[$k]->name);
-                }else{
-                    $tempMenu =  MenuItem::resource('\\Gtiger117\\Athlo\\Nova\\'.$submenu[$k]->name);
-                }
-                
-            }else{
-                $tempMenu =  MenuItem::link($submenu[$k]->name, $submenu[$k]->value);
-            }
-            array_push($menus,$tempMenu);
-        }
-        return $menus;
-    }
+    
 
     public function boot()
     {
@@ -75,6 +53,30 @@ class Athlo extends Tool
      * @param  \Illuminate\Http\Request $request
      * @return mixed
      */
+    function get_menus($parent){
+        $submenu = DB::table('nova_menu_menu_items')
+                        // ->join('nova_menu_menus', 'nova_menu_menus.id', '=', 'nova_menu_menu_items.menu_id')
+                        // ->where('slug','nova_menu')
+                        ->where('parent_id',$parent)->orderBy('order', 'asc')->get();
+        $menus = [];
+        for($k=0;$k<count($submenu);$k++){
+            if(DB::table('nova_menu_menu_items')->where('parent_id',$submenu[$k]->id)->exists()){
+                $tempMenu =  MenuGroup::make($submenu[$k]->name, $this->get_menus($submenu[$k]->id))->collapsable()->collapsedByDefault();
+            }else if($submenu[$k]->value == null || $submenu[$k]->value == ""){
+                if(strpos($submenu[$k]->name,"\\")){
+                    $tempMenu =  MenuItem::resource($submenu[$k]->name);
+                }else{
+                    $tempMenu =  MenuItem::resource('\\Gtiger117\\Athlo\\Nova\\'.$submenu[$k]->name);
+                }
+                
+            }else{
+                $tempMenu =  MenuItem::link($submenu[$k]->name, $submenu[$k]->value);
+            }
+            array_push($menus,$tempMenu);
+        }
+        return $menus;
+    }
+    
     public function menu(Request $request)
     {
         $menus = [];
@@ -90,58 +92,6 @@ class Athlo extends Tool
             }
             array_push($menus,$tempMenu);
         }
-        return $menus;
-        // $menus = [
-        //     MenuSection::make('Product Catalogue', [
-        //         MenuItem::resource(\Gtiger117\Athlo\Nova\GiftVoucher::class),
-        //         MenuGroup::make('Settings', [
-        //             // MenuItem::resource(PaymentMethod::class),
-        //             // MenuItem::resource(PaymentMethodType::class),
-        //             // MenuItem::resource(PaymentGateway::class),
-        //         ])->collapsable()->collapsedByDefault(),
-        //     ])->icon('briefcase')->collapsable()->collapsedByDefault(),
-
-        //     MenuSection::make('Ordering', [
-        //         MenuItem::resource(\Gtiger117\Athlo\Nova\VoucherOrder::class),
-        //         MenuGroup::make('Settings', [
-        //             // MenuItem::resource(PaymentMethod::class),
-        //             MenuItem::resource(\Gtiger117\Athlo\Nova\PaymentMethodType::class),
-        //             MenuItem::resource(\Gtiger117\Athlo\Nova\PaymentGateway::class),
-        //             MenuItem::resource(\Gtiger117\Athlo\Nova\VoucherEmailTemplate::class),
-        //         ])->collapsable()->collapsedByDefault(),
-        //     ])->icon('briefcase')->collapsable()->collapsedByDefault(),
-
-        //     MenuSection::make('Marketing', [
-        //         MenuItem::resource(\Gtiger117\Athlo\Nova\PromotionalVoucher::class),
-        //         // MenuItem::resource(ShippingMethodType::class),
-        //         MenuGroup::make('Settings', [
-        //             // MenuItem::resource(Pickup::class),
-        //             // MenuItem::resource(PickupGroup::class),
-        //             // MenuItem::resource(Region::class),
-        //         ])->collapsable()->collapsedByDefault(),
-        //     ])->icon('briefcase')->collapsable()->collapsedByDefault(),
-
-        //     MenuSection::make('Shipping', [
-        //         MenuItem::resource(\Gtiger117\Athlo\Nova\ShippingMethod::class),
-        //         MenuItem::resource(\Gtiger117\Athlo\Nova\ShippingMethodType::class),
-        //         MenuGroup::make('Settings', [
-        //             MenuItem::resource(\Gtiger117\Athlo\Nova\Pickup::class),
-        //             MenuItem::resource(\Gtiger117\Athlo\Nova\PickupGroup::class),
-        //             MenuItem::resource(\Gtiger117\Athlo\Nova\Region::class),
-        //         ])->collapsable()->collapsedByDefault(),
-        //     ])->icon('briefcase')->collapsable()->collapsedByDefault(),
-
-        //     MenuSection::make('Website', [
-        //         // MenuItem::resource(Page::class),
-        //          MenuItem::link('Page', '/page'),  
-        //          MenuItem::resource(\Gtiger117\Athlo\Nova\Banner::class),                  
-        //          MenuItem::resource(\Gtiger117\Athlo\Nova\Blog::class),                  
-        //      ])->icon('trash')->collapsable()->collapsedByDefault(),
-
-        //      MenuSection::make('Settings', [
-        //         MenuItem::resource(\Gtiger117\Athlo\Nova\Tax::class),
-        //     ])->icon('cog')->collapsable()->collapsedByDefault(),
-        // ];
         return $menus;
     }
     
