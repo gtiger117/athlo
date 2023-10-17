@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Nova;
+namespace Gtiger117\Athlo\Nova;
 
 use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
@@ -24,7 +24,7 @@ class BannerImage extends Resource
      *
      * @var string
      */
-    public static $model = \App\Models\BannerImage::class;
+    public static $model = \Gtiger117\Athlo\Models\BannerImage::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.

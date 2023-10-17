@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Nova;
+namespace Gtiger117\Athlo\Nova;
 
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\ID;
@@ -16,7 +16,7 @@ class Package extends Resource
      *
      * @var class-string<\App\Models\Package>
      */
-    public static $model = \App\Models\Package::class;
+    public static $model = \Gtiger117\Athlo\Models\Package::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.

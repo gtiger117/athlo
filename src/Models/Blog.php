@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models;
+namespace Gtiger117\Athlo\Models;
 
 use App\Models\Scopes\Searchable;
 use Illuminate\Database\Eloquent\Model;

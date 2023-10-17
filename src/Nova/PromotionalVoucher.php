@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Nova;
+namespace Gtiger117\Athlo\Nova;
 
 
 use Illuminate\Http\Request;
@@ -26,7 +26,7 @@ class PromotionalVoucher extends Resource
      *
      * @var class-string<\App\Models\PromotionalVoucher>
      */
-    public static $model = \App\Models\PromotionalVoucher::class;
+    public static $model = \Gtiger117\Athlo\Models\PromotionalVoucher::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.

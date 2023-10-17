@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Nova;
+namespace Gtiger117\Athlo\Nova;
 use Illuminate\Support\Facades\DB;
 use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
@@ -19,7 +19,7 @@ class Theme extends Resource
      *
      * @var string
      */
-    public static $model = \App\Models\Theme::class;
+    public static $model = \Gtiger117\Athlo\Models\Theme::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.

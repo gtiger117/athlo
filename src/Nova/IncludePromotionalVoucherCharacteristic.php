@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Nova;
+namespace Gtiger117\Athlo\Nova;
 
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\BelongsTo;
@@ -24,7 +24,7 @@ class IncludePromotionalVoucherCharacteristic extends Resource
      *
      * @var class-string<\App\Models\PurchasedVoucher>
      */
-    public static $model = \App\Models\IncludePromotionalVoucherCharacteristic::class;
+    public static $model = \Gtiger117\Athlo\Models\IncludePromotionalVoucherCharacteristic::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.

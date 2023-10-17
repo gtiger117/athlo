@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Nova;
+namespace Gtiger117\Athlo\Nova;
 
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rules;
@@ -17,7 +17,7 @@ class User extends Resource
      *
      * @var class-string<\App\Models\User>
      */
-    public static $model = \App\Models\User::class;
+    public static $model = \Gtiger117\Athlo\Models\User::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.

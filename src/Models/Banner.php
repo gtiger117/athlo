@@ -2,20 +2,20 @@
 
 namespace Gtiger117\Athlo\Models;
 
-// use App\Models\Scopes\Searchable;
+use App\Models\Scopes\Searchable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-// use Spatie\MediaLibrary\HasMedia;
-// use Spatie\MediaLibrary\InteractsWithMedia;
-// use Spatie\Translatable\HasTranslations;
-// use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use Spatie\MediaLibrary\HasMedia;
+use Spatie\MediaLibrary\InteractsWithMedia;
+use Spatie\Translatable\HasTranslations;
+use Spatie\MediaLibrary\MediaCollections\Models\Media;
 
 class Banner extends Model
 {
-    // use HasFactory;
-    // use Searchable;
-	// use HasTranslations;
-    // use InteractsWithMedia;
+    use HasFactory;
+    use Searchable;
+	use HasTranslations;
+    use InteractsWithMedia;
 	
 	public $translatable = ['title','description'];
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Nova\Dashboards;
+namespace Gtiger117\Athlo\Nova\Dashboards;
 
 use Laravel\Nova\Cards\Help;
 use Laravel\Nova\Dashboards\Main as Dashboard;

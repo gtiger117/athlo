@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Nova;
+namespace Gtiger117\Athlo\Nova;
 
 use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
@@ -23,7 +23,7 @@ class GiftVoucher extends Resource
      *
      * @var string
      */
-    public static $model = \App\Models\GiftVoucher::class;
+    public static $model = \Gtiger117\Athlo\Models\GiftVoucher::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.

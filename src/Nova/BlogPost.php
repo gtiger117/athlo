@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Nova;
+namespace Gtiger117\Athlo\Nova;
 
 use Ebess\AdvancedNovaMediaLibrary\Fields\Images;
 use Laravel\Nova\Fields\ID;
@@ -24,7 +24,7 @@ class BlogPost extends Resource
      *
      * @var string
      */
-    public static $model = \App\Models\BlogPost::class;
+    public static $model = \Gtiger117\Athlo\Models\BlogPost::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.

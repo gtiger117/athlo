@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models\Scopes;
+namespace Gtiger117\Athlo\Models\Scopes;
 
 use Illuminate\Database\Eloquent\Builder;
 
