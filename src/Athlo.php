@@ -45,6 +45,13 @@ class Athlo extends Tool
         ]);
         Nova::script('athlo', __DIR__.'/../dist/js/tool.js');
         Nova::style('athlo', __DIR__.'/../dist/css/tool.css');
+        // Load migrations
+        if (config('nova-menu.auto_load_migrations', true)) {
+            $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
+        }
+
+        // Publish data
+        $this->publishes([__DIR__ . '/../database/migrations' => database_path('migrations')], 'athlo-migrations');
     }
 
     /**
@@ -76,7 +83,7 @@ class Athlo extends Tool
         }
         return $menus;
     }
-    
+
     public function menu(Request $request)
     {
         $menus = [];
