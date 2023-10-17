@@ -2,7 +2,7 @@
 
 namespace Gtiger117\Athlo\Models;
 
-use App\Models\Scopes\Searchable;
+use Gtiger117\Athlo\Models\Scopes\Searchable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Spatie\MediaLibrary\HasMedia;

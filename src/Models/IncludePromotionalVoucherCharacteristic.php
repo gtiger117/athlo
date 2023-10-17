@@ -4,7 +4,7 @@ namespace Gtiger117\Athlo\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\Scopes\Searchable;
+use Gtiger117\Athlo\Models\Scopes\Searchable;
 
 class IncludePromotionalVoucherCharacteristic extends Model
 {

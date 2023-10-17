@@ -2,7 +2,7 @@
 
 namespace Gtiger117\Athlo\Models;
 
-use App\Models\Scopes\Searchable;
+use Gtiger117\Athlo\Models\Scopes\Searchable;
 use Spatie\EloquentSortable\Sortable;
 use Spatie\EloquentSortable\SortableTrait;
 use Illuminate\Database\Eloquent\Model;

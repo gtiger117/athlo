@@ -2,7 +2,7 @@
 
 namespace Gtiger117\Athlo\Models;
 
-use App\Models\Scopes\Searchable;
+use Gtiger117\Athlo\Models\Scopes\Searchable;
 use App\Models\Category;
 use App\Models\CharValue;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
