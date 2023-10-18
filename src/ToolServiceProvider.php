@@ -22,8 +22,10 @@ class ToolServiceProvider extends ServiceProvider
             $this->routes();
         });
 
-        $this->loadMigrationsFrom(system_path('vendor/gtiger117/athlo/database/migrations'));
-
+        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+        
+        $this->publishes([__DIR__ . '/../database/migrations' => database_path('migrations')], 'athlo-migrations');
+        
         // Load migrations
         // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
 
@@ -32,7 +34,7 @@ class ToolServiceProvider extends ServiceProvider
         // ], 'migrations');
 
         // Publish data
-        // $this->publishes([__DIR__ . '/../database/migrations' => database_path('migrations')], 'athlo-migrations');
+        
 
         Nova::serving(function (ServingNova $event) {
             //
