@@ -22,6 +22,12 @@ class ToolServiceProvider extends ServiceProvider
             $this->routes();
         });
 
+        // Load migrations
+        $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
+
+        // Publish data
+        // $this->publishes([__DIR__ . '/../database/migrations' => database_path('migrations')], 'athlo-migrations');
+
         Nova::serving(function (ServingNova $event) {
             //
         });
