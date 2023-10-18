@@ -22,8 +22,10 @@ class ToolServiceProvider extends ServiceProvider
             $this->routes();
         });
 
+        $this->loadMigrationsFrom(system_path('vendor/gtiger117/athlo/database/migrations'));
+
         // Load migrations
-        $this->loadMigrationsFrom(__DIR__.'/database/migrations');
+        // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
 
         // $this->publishes([
         //     __DIR__.'/../database/migrations/' => database_path('migrations')
