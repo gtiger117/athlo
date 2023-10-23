@@ -2,7 +2,7 @@
 
 namespace App\Observers;
 
-use App\Models\PurchasedVoucher;
+use Gtiger117\Athlo\Models\PurchasedVoucher;
 
 class PurchasedVoucherObserver
 {

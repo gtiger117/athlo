@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Controllers\installPackageController;
-use App\Http\Controllers\Ordering\CreditCardGatewayController;
+use Gtiger117\Athlo\Http\Controllers\installPackageController;
+use Gtiger117\Athlo\Http\Controllers\Ordering\CreditCardGatewayController;
 use Fosetico\LaravelPageBuilder\LaravelPageBuilder as LaravelPageBuilderLaravelPageBuilder;
 use Illuminate\Support\Facades\Route;
 

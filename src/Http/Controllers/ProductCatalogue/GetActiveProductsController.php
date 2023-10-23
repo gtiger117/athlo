@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\ProductCatalogue;
+namespace Gtiger117\Athlo\Http\Controllers\ProductCatalogue;
 
 use App\Helpers\Helper;
-use App\Http\Controllers\Controller;
-use App\Models\Product;
+use Gtiger117\Athlo\Http\Controllers\Controller;
+use Gtiger117\Athlo\Models\Product;
 use App\Services\GetSubcategoriesService;
 use Hamcrest\Description;
 use Illuminate\Http\Request;

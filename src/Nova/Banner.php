@@ -21,7 +21,7 @@ class Banner extends Resource
     /**
      * The model the resource corresponds to.
      *
-     * @var class-string<\App\Models\Banner>
+     * @var class-string<\Gtiger117\Athlo\Models\Banner>
      */
     public static $model = \Gtiger117\Athlo\Models\Banner::class;
 

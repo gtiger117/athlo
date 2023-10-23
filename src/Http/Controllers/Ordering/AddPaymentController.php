@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Ordering;
+namespace Gtiger117\Athlo\Http\Controllers\Ordering;
 
 use App\Helpers\Helper;
-use App\Http\Controllers\Controller;
-use App\Models\PaymentGateway;
+use Gtiger117\Athlo\Http\Controllers\Controller;
+use Gtiger117\Athlo\Models\PaymentGateway;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;

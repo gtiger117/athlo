@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers\ProductCatalogue;
+namespace Gtiger117\Athlo\Http\Controllers\ProductCatalogue;
 
-use App\Http\Controllers\Controller;
+use Gtiger117\Athlo\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;

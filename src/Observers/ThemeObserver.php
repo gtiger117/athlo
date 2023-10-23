@@ -2,8 +2,8 @@
 
 namespace App\Observers;
 
-use App\Models\Theme;
-use App\Http\Controllers\SendEmailController;
+use Gtiger117\Athlo\Models\Theme;
+use Gtiger117\Athlo\Http\Controllers\SendEmailController;
 use Illuminate\Support\Facades\DB;
 use ZipArchive;
 use Config;
@@ -13,7 +13,7 @@ class ThemeObserver
     /**
      * Handle the Theme "created" event.
      *
-     * @param  \App\Models\Theme  $Theme
+     * @param  \Gtiger117\Athlo\Models\Theme  $Theme
      * @return void
      */
     public function created(Theme $Theme)
@@ -50,7 +50,7 @@ class ThemeObserver
     /**
      * Handle the Theme "updated" event.
      *
-     * @param  \App\Models\Theme  $Theme
+     * @param  \Gtiger117\Athlo\Models\Theme  $Theme
      * @return void
      */
     public function updated(Theme $Theme)
@@ -68,7 +68,7 @@ class ThemeObserver
     /**
      * Handle the Theme "deleted" event.
      *
-     * @param  \App\Models\Theme  $Theme
+     * @param  \Gtiger117\Athlo\Models\Theme  $Theme
      * @return void
      */
     public function deleted(Theme $Theme)
@@ -79,7 +79,7 @@ class ThemeObserver
     /**
      * Handle the Theme "restored" event.
      *
-     * @param  \App\Models\Theme  $Theme
+     * @param  \Gtiger117\Athlo\Models\Theme  $Theme
      * @return void
      */
     public function restored(Theme $Theme)
@@ -90,7 +90,7 @@ class ThemeObserver
     /**
      * Handle the Theme "force deleted" event.
      *
-     * @param  \App\Models\Theme  $Theme
+     * @param  \Gtiger117\Athlo\Models\Theme  $Theme
      * @return void
      */
     public function forceDeleted(Theme $Theme)

@@ -1,7 +1,7 @@
 <?php
 
-use App\Models\Pickup;
-use App\Models\PickupGroup;
+use Gtiger117\Athlo\Models\Pickup;
+use Gtiger117\Athlo\Models\PickupGroup;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;

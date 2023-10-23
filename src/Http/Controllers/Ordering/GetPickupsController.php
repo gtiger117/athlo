@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Controllers\Ordering;
+namespace Gtiger117\Athlo\Http\Controllers\Ordering;
 
 use App\Helpers\Helper;
-use App\Http\Controllers\Controller;
+use Gtiger117\Athlo\Http\Controllers\Controller;
 use App\Services\GetPickupsService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;

@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Ordering;
+namespace Gtiger117\Athlo\Http\Controllers\Ordering;
 
-use App\Http\Controllers\Controller;
-use App\Models\Country;
-use App\Models\ShippingMethod;
+use Gtiger117\Athlo\Http\Controllers\Controller;
+use Gtiger117\Athlo\Models\Country;
+use Gtiger117\Athlo\Models\ShippingMethod;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;

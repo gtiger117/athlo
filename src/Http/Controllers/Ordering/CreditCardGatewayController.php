@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\Ordering;
+namespace Gtiger117\Athlo\Http\Controllers\Ordering;
 
 use App\Helpers\Helper;
-use App\Http\Controllers\Controller;
-use App\Models\PaymentMethod;
-use App\Models\PaymentMethodType;
-use App\Models\VoucherOrder;
+use Gtiger117\Athlo\Http\Controllers\Controller;
+use Gtiger117\Athlo\Models\PaymentMethod;
+use Gtiger117\Athlo\Models\PaymentMethodType;
+use Gtiger117\Athlo\Models\VoucherOrder;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;

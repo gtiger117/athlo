@@ -2,7 +2,7 @@
 
 namespace App\Observers;
 
-use App\Models\Package;
+use Gtiger117\Athlo\Models\Package;
 use Illuminate\Support\Facades\DB;
 use ZipArchive;
 

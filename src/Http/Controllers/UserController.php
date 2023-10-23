@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Gtiger117\Athlo\Http\Controllers;
 
-use App\Models\User;
+use Gtiger117\Athlo\Models\User;
 use Illuminate\View\View;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;

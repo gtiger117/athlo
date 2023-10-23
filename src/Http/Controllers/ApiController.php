@@ -1,5 +1,5 @@
 <?php
-namespace App\Http\Controllers;
+namespace Gtiger117\Athlo\Http\Controllers;
 
 use Illuminate\Http\Request;
 

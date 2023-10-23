@@ -15,7 +15,7 @@ class User extends Resource
     /**
      * The model the resource corresponds to.
      *
-     * @var class-string<\App\Models\User>
+     * @var class-string<\Gtiger117\Athlo\Models\User>
      */
     public static $model = \Gtiger117\Athlo\Models\User::class;
 

@@ -2,8 +2,8 @@
 
 namespace App\Observers;
 
-use App\Models\PurchasedVoucher;
-use App\Models\VoucherOrder;
+use Gtiger117\Athlo\Models\PurchasedVoucher;
+use Gtiger117\Athlo\Models\VoucherOrder;
 
 class VoucherOrderObserver
 {

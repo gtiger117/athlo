@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Ordering;
+namespace Gtiger117\Athlo\Http\Controllers\Ordering;
 
 use App\Helpers\Helper;
-use App\Http\Controllers\Controller;
-use App\Models\PickupGroup;
-use App\Models\ShippingMethodType;
+use Gtiger117\Athlo\Http\Controllers\Controller;
+use Gtiger117\Athlo\Models\PickupGroup;
+use Gtiger117\Athlo\Models\ShippingMethodType;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;

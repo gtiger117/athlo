@@ -14,7 +14,7 @@ class Package extends Resource
     /**
      * The model the resource corresponds to.
      *
-     * @var class-string<\App\Models\Package>
+     * @var class-string<\Gtiger117\Athlo\Models\Package>
      */
     public static $model = \Gtiger117\Athlo\Models\Package::class;
 

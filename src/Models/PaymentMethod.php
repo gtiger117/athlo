@@ -3,7 +3,7 @@
 namespace Gtiger117\Athlo\Models;
 
 use Gtiger117\Athlo\Models\Scopes\Searchable;
-use App\Models\Country;
+use Gtiger117\Athlo\Models\Country;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Spatie\Translatable\HasTranslations;

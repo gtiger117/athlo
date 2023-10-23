@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\Api;
+namespace Gtiger117\Athlo\Http\Controllers\Api;
 
-use App\Models\User;
+use Gtiger117\Athlo\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use App\Http\Resources\UserResource;
-use App\Http\Controllers\Controller;
+use Gtiger117\Athlo\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use App\Http\Resources\UserCollection;
 use App\Http\Requests\UserStoreRequest;

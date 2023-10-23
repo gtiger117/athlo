@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers\Ordering;
+namespace Gtiger117\Athlo\Http\Controllers\Ordering;
 
-use App\Http\Controllers\Controller;
+use Gtiger117\Athlo\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class FinalizeCreditCardGatewayController extends Controller

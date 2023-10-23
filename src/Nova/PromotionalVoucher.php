@@ -24,7 +24,7 @@ class PromotionalVoucher extends Resource
     /**
      * The model the resource corresponds to.
      *
-     * @var class-string<\App\Models\PromotionalVoucher>
+     * @var class-string<\Gtiger117\Athlo\Models\PromotionalVoucher>
      */
     public static $model = \Gtiger117\Athlo\Models\PromotionalVoucher::class;
 

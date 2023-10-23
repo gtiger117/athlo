@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Controllers\ProductCatalogue;
+namespace Gtiger117\Athlo\Http\Controllers\ProductCatalogue;
 
 use App\Helpers\Helper;
-use App\Http\Controllers\Controller;
+use Gtiger117\Athlo\Http\Controllers\Controller;
 use App\Services\GetSubcategoriesService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;

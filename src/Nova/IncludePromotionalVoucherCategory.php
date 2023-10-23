@@ -22,7 +22,7 @@ class IncludePromotionalVoucherCategory extends Resource
     /**
      * The model the resource corresponds to.
      *
-     * @var class-string<\App\Models\PurchasedVoucher>
+     * @var class-string<\Gtiger117\Athlo\Models\PurchasedVoucher>
      */
     public static $model = \Gtiger117\Athlo\Models\IncludePromotionalVoucherCategory::class;
 

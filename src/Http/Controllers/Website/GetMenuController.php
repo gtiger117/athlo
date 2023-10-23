@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Website;
+namespace Gtiger117\Athlo\Http\Controllers\Website;
 
 use App\Helpers\Helper;
-use App\Http\Controllers\Controller;
-use App\Models\Category;
+use Gtiger117\Athlo\Http\Controllers\Controller;
+use Gtiger117\Athlo\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;

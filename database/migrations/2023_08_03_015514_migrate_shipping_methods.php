@@ -1,7 +1,7 @@
 <?php
 
-use App\Models\ShippingMethod;
-use App\Models\ShippingMethodType;
+use Gtiger117\Athlo\Models\ShippingMethod;
+use Gtiger117\Athlo\Models\ShippingMethodType;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\DB;

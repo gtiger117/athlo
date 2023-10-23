@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Website;
+namespace Gtiger117\Athlo\Http\Controllers\Website;
 
-use App\Http\Controllers\Controller;
-use App\Models\Blog;
-use App\Models\BlogPost;
+use Gtiger117\Athlo\Http\Controllers\Controller;
+use Gtiger117\Athlo\Models\Blog;
+use Gtiger117\Athlo\Models\BlogPost;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 

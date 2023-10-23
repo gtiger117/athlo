@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
-use App\Models\Country;
+use Gtiger117\Athlo\Models\Country;
 
 return new class extends Migration {
     /**

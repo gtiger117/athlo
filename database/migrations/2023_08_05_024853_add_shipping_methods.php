@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\Tax;
+use Gtiger117\Athlo\Models\Tax;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\DB;

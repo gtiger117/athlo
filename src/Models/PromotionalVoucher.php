@@ -3,8 +3,8 @@
 namespace Gtiger117\Athlo\Models;
 
 use Gtiger117\Athlo\Models\Scopes\Searchable;
-use App\Models\Category;
-use App\Models\CharValue;
+use Gtiger117\Athlo\Models\Category;
+use Gtiger117\Athlo\Models\CharValue;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
