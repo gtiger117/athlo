@@ -14,7 +14,6 @@ return new class extends Migration {
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('code')->nullable();
-            $table->string('type');
             $table->string('type')->nullable();
             $table->float('amount')->nullable();
             $table->float('percentage')->nullable();

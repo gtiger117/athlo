@@ -12,12 +12,6 @@ return new class extends Migration {
     {
         Schema::table('gift_vouchers', function (Blueprint $table) {
             $table
-                ->foreign('voucheremail_template_id')
-                ->references('id')
-                ->on('voucher_email_templates')
-                ->onUpdate('CASCADE')
-                ->onDelete('RESTRICT');
-            $table
                 ->foreign('tax_id')
                 ->references('id')
                 ->on('taxes')
